@@ -13,4 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'HomeController@journey')->name('home');
+Route::get('/', 'JourneyController@index')->name('index');
+
+Route::get('/journey/{id}', 'JourneyController@show')->name('show');
